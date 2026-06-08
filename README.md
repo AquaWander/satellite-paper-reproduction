@@ -64,6 +64,10 @@ AI 模型想要性能出色，尚且需要高质量的训练数据；人的大�
 | 033 | ISAC-Empowered LEO Constellation: Networked Sensing, Challenges and Opportunities | WCM 2026 | ISAC、LEO星座、网络化感知、综述 | [`[033-WCM-2026]ISAC...`](./[033-WCM-2026]ISAC-Empowered_LEO_Constellation_Networked_Sensing_Challenges_and_Opportunities) |
 | 034 | Co-Existence Analysis of Terrestrial and Non-Terrestrial Networks in S-Band Using Stochastic Geometry | TCOM 2026 | 星地共存、随机几何、S波段 | [`[034-TCOM-2026]Co-Existence...`](./[034-TCOM-2026]Co-Existence_Analysis_of_Terrestrial_and_Non-Terrestrial_Networks_in_S-Band_Using_Stochastic_Geometry) |
 | 035 | RFI Detection and Geolocation From LEO | TAES 2026 | 射频干扰检测、地理定位、LEO | [`[035-TAES-2026]RFI...`](./[035-TAES-2026]RFI_Detection_and_Geolocation_From_LEO) |
+| 036 | Space Computing Constellation: System Architecture, Implementations, and Challenges | IOTJ 2026 | 空间计算星座、系统架构、星载计算 | [`[036-IOTJ-2026]Space...`](./[036-IOTJ-2026]Space_Computing_Constellation_System_Architecture_Implementations_and_Challenges) |
+| 037 | Satellite Computing Network Construction: Optimal Computing Node Deployment in Multi-Layer LEO Mega-Constellations | TCOM 2026 | 卫星计算网络、计算节点部署、多层LEO | [`[037-TCOM-2026]Satellite...`](./[037-TCOM-2026]Satellite_Computing_Network_Construction_Optimal_Computing_Node_Deployment_in_Multi-Layer_LEO_Mega-Constellations) |
+| 038 | Survey: Spectrum Sharing and Interference Management for 6G LEO Satellite-Terrestrial Network Integration | COMST 2025 | 频谱共享、干扰管理、星地融合、综述 | [`[038-COMST-2025]Survey...`](./[038-COMST-2025]Survey_Spectrum_Sharing_and_Interference_Management_for_6G_LEO_Satellite-Terrestrial_Network_Integration) |
+| 039 | Split Learning-Based Channel Prediction for 6G-Enabled LEO Satellite Systems | TGCN 2026 | 拆分学习、信道预测、6G LEO | [`[039-TGCN-2026]Split...`](./[039-TGCN-2026]Split_Learning-Based_Channel_Prediction_for_6G-Enabled_LEO_Satellite_Systems) |
 
 ## 快速使用
 
