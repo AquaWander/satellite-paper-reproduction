@@ -68,6 +68,10 @@ AI 模型想要性能出色，尚且需要高质量的训练数据；人的大�
 | 037 | Satellite Computing Network Construction: Optimal Computing Node Deployment in Multi-Layer LEO Mega-Constellations | TCOM 2026 | 卫星计算网络、计算节点部署、多层LEO | [`[037-TCOM-2026]Satellite...`](./[037-TCOM-2026]Satellite_Computing_Network_Construction_Optimal_Computing_Node_Deployment_in_Multi-Layer_LEO_Mega-Constellations) |
 | 038 | Survey: Spectrum Sharing and Interference Management for 6G LEO Satellite-Terrestrial Network Integration | COMST 2025 | 频谱共享、干扰管理、星地融合、综述 | [`[038-COMST-2025]Survey...`](./[038-COMST-2025]Survey_Spectrum_Sharing_and_Interference_Management_for_6G_LEO_Satellite-Terrestrial_Network_Integration) |
 | 039 | Split Learning-Based Channel Prediction for 6G-Enabled LEO Satellite Systems | TGCN 2026 | 拆分学习、信道预测、6G LEO | [`[039-TGCN-2026]Split...`](./[039-TGCN-2026]Split_Learning-Based_Channel_Prediction_for_6G-Enabled_LEO_Satellite_Systems) |
+| 040 | A Distributed Beam Hopping Strategy With Load Balancing and Coordinated Interference Avoidance for Heterogeneous Satellite Systems | TAES 2026 | 分布式跳波束、负载均衡、异构卫星 | [`[040-TAES-2026]A_Distributed...`](./[040-TAES-2026]A_Distributed_Beam_Hopping_Strategy_With_Load_Balancing_and_Coordinated_Interference_Avoidance_for_Heterogeneous_Satellite_Systems) |
+| 041 | Wireless Energy Transfer From Space to Ground via Satellite Constellation Grids | WCL 2026 | 空间无线送电、星座栅格、能量建模 | [`[041-WCL-2026]Wireless...`](./[041-WCL-2026]Wireless_Energy_Transfer_From_Space_to_Ground_via_Satellite_Constellation_Grids) |
+| 042 | Harnessing Rydberg Atomic Receivers: From Quantum Physics to Wireless Communications | TWC 2026 | Rydberg原子接收机、量子接收、综述 | [`[042-TWC-2026]Harnessing...`](./[042-TWC-2026]Harnessing_Rydberg_Atomic_Receivers_From_Quantum_Physics_to_Wireless_Communications) |
+| 043 | Polarization-Aware DoA Detection Relying on a Single Rydberg Atomic Receiver | JSAC 2026 | Rydberg接收机、偏振感知、波达方向检测 | [`[043-JSAC-2026]Polarization...`](./[043-JSAC-2026]Polarization-Aware_DoA_Detection_Relying_on_a_Single_Rydberg_Atomic_Receiver) |
 
 ## 快速使用
 
