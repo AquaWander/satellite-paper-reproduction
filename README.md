@@ -73,6 +73,8 @@ AI 模型想要性能出色，尚且需要高质量的训练数据；人的大�
 | 042 | Harnessing Rydberg Atomic Receivers: From Quantum Physics to Wireless Communications | TWC 2026 | Rydberg原子接收机、量子接收、综述 | [`[042-TWC-2026]Harnessing...`](./[042-TWC-2026]Harnessing_Rydberg_Atomic_Receivers_From_Quantum_Physics_to_Wireless_Communications) |
 | 043 | Polarization-Aware DoA Detection Relying on a Single Rydberg Atomic Receiver | JSAC 2026 | Rydberg接收机、偏振感知、波达方向检测 | [`[043-JSAC-2026]Polarization...`](./[043-JSAC-2026]Polarization-Aware_DoA_Detection_Relying_on_a_Single_Rydberg_Atomic_Receiver) |
 | 044 | LLM-Guided DRL for Multi-Tier LEO Satellite Networks With Hybrid FSO/RF Links | JSAC 2026 | LLM引导DRL、多层LEO、FSO/RF混合链路 | [`[044-JSAC-2026]LLM-Guided...`](./[044-JSAC-2026]LLM-Guided_DRL_for_Multi-Tier_LEO_Satellite_Networks_With_Hybrid_FSO_RF_Links) |
+| 045 | Learning When and Where to Handover: A Hierarchical Reinforcement Learning Framework for Dense LEO Satellite Constellations | TWC 2026 | 分层强化学习、卫星切换、密集LEO星座 | [`[045-TWC-2026]Learning...`](./[045-TWC-2026]Learning_When_and_Where_to_Handover_A_Hierarchical_Reinforcement_Learning_Framework_for_Dense_LEO_Satellite_Constellations) |
+| 046 | Collaborative Beam Hopping of Load Balancing and Interference Avoidance for Multi-GEO Satellite Systems Using QMIX | TWC 2026 | 多GEO协作跳波束、负载均衡、干扰规避、QMIX | [`[046-TWC-2026]Collaborative...`](./[046-TWC-2026]Collaborative_Beam_Hopping_of_Load_Balancing_and_Interference_Avoidance_for_Multi-GEO_Satellite_Systems_Using_QMIX) |
 
 ## 快速使用
 
