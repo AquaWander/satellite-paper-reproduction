@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-11-11T16:00:37.666876+08:00",
+  "python": "3.13.12",
+  "profile": "bessel",
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "torch": "2.10.0+cpu",
+    "matplotlib": "3.10.8"
+  },
+  "simulation_config": {
+    "seed": 20260823,
+    "area_side_m": 20000.0,
+    "n_gnb": 106,
+    "frequency_hz": 12000000000.0,
+    "bandwidth_hz": 200000000.0,
+    "satellite_power_dbm": 48.0,
+    "satellite_gain_dbi": 38.3,
+    "t1_gain_dbi": 33.0,
+    "t2_gain_dbi": 17.0,
+    "gnb_max_power_dbm": 33.0,
+    "ue_max_power_dbm": 23.0,
+    "density_values": [
+      6e-08,
+      1e-07,
+      3e-07
+    ],
+    "mix_values": [
+      1.0,
+      0.5,
+      0.0
+    ],
+    "tn_ue_density_m2": 1.3e-05,
+    "ue_per_cell_min": 12,
+    "ue_per_cell_max": 20,
+    "satellite_altitude_m": 600000.0,
+    "earth_radius_m": 6371000.0,
+    "n_snapshots": 160,
+    "elevation_start_deg": 10.0,
+    "elevation_step_deg": 1.0,
+    "bs_coordinates_csv": "",
+    "gnb_height_m": 25.0,
+    "terminal_height_m": 1.5,
+    "gnb_peak_gain_dbi": 15.0,
+    "gnb_antenna_model": "parabolic",
+    "gnb_horizontal_hpbw_deg": 65.0,
+    "gnb_vertical_hpbw_deg": 10.0,
+    "gnb_front_back_db": 30.0,
+    "gnb_sidelobe_db": 30.0,
+    "aperture_efficiency": 0.65,
+    "ut_antenna_model": "bessel",
+    "antenna_back_attenuation_db": 55.0,
+    "antenna_rear_model": "relative_floor",
+    "propagation_model": "icc_los",
+    "shadow_fading": false,
+    "noise_temperature_k": 290.0,
+    "noise_figure_db": 0.0,
+    "thermal_noise_dbm_hz": -174.0,
+    "ntn_extra_loss_db": 3.0,
+    "gnb_min_power_dbm": 10.0,
+    "ue_min_power_dbm": -10.0,
+    "tilt_min_deg": 0.0,
+    "tilt_max_deg": 20.0,
+    "default_tilt_deg": 6.0,
+    "inr_threshold_db": -6.0,
+    "downlink_duty": 0.75,
+    "uplink_duty": 0.25,
+    "reward_throughput_weight": 1.0,
+    "reward_active_weight": 0.5,
+    "reward_violation_weight": 1.0,
+    "ascent_radius_step_m": 500.0,
+    "ascent_hysteresis_db": 3.0,
+    "methods": [
+      "No-coordination",
+      "ASCENT-derived",
+      "PPO"
+    ]
+  },
+  "training_seeds": [
+    11,
+    22,
+    33
+  ],
+  "evaluation_seeds": [
+    91001,
+    91002,
+    91003
+  ],
+  "source_sha256": {
+    "config.py": "f0b2dfc1564c3c328588600519f5dc408482783ab6670a4f69fff188a1deba47",
+    "tn_ntn_model.py": "d6cc22f0a3d099eef7977f279415acd19e39fce772b3df323ff1d2f1cfefcf1c",
+    "ppo.py": "b5016b1a5b8ce413c2cb5f6b8b1caa5d90b89b06a07b31913d55c0038dc41adc"
+  },
+  "pipeline_sha256": {
+    "baselines.py": "b50fa9a65e85139dc5939be95d46296ddf9e07edf10e5b07bca4c4dc61d2626c",
+    "config.py": "f0b2dfc1564c3c328588600519f5dc408482783ab6670a4f69fff188a1deba47",
+    "diagnostics.py": "b46dfa7eac4be2bb466600024eac7dbef2693d1159e88d3baad0ac83c67888f5",
+    "official_ascent.py": "98343a5a42cffb269b487812dfe6fb056f3ed9d03a560f56b3ab55284559aad2",
+    "paper_assets.py": "feb56d2b4d6217713a8a2d25e14ba1b3113f093beef9a19bde7c2b0a158edc8c",
+    "plotting.py": "b9ce72902291b1e10abc77ce7bc5de6a5763c2d89fe1d0ddd6c907673553c796",
+    "ppo.py": "b5016b1a5b8ce413c2cb5f6b8b1caa5d90b89b06a07b31913d55c0038dc41adc",
+    "run_reproduction.py": "79d566adcb0ec8cdfa8af1a6eb16e0c3714e9557cb5f38ed8bc5e2969afc376f",
+    "simulation.py": "3ed46d4b683cd83d869e2e25de4bc7d7eb1d449a4b3cdb588a72841a3b72ed58",
+    "tn_ntn_model.py": "d6cc22f0a3d099eef7977f279415acd19e39fce772b3df323ff1d2f1cfefcf1c",
+    "verify.py": "69b2ea45c904ff31ac460d2aae0adb0a97b2affaea1b827681f1c43a5dcfb797"
+  },
+  "inference": "sampled",
+  "action_seed_offset": 700000
+}

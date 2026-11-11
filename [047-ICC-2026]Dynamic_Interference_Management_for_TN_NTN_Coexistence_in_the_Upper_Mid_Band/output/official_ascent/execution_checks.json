@@ -1,0 +1,11 @@
+{
+  "base_station_count_33": true,
+  "finite_individual_inr": true,
+  "aggregate_is_linear_power_sum": true,
+  "original_simulator_actually_called": true,
+  "original_pathloss_actually_called": true,
+  "original_beam_link_calculation_actually_called": true,
+  "no_original_beam_optimization_needed": true,
+  "exact_controller_keeps_feedback_overwrite": true,
+  "checked_controller_removes_only_feedback_overwrite": true
+}

@@ -1,0 +1,7 @@
+/_release/
+/*.pdf
+/*.zip
+/external_sources/
+/output/diagnostics/previous_release_manifest.json
+/output/diagnostics/previous_release_verification.json
+/output/official_ascent/input_upstream_case.json

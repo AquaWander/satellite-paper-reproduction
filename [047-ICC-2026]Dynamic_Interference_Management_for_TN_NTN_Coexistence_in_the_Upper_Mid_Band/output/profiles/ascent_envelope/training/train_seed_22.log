@@ -1,0 +1,26 @@
+PPO seed=22 episode=32/800 reward=0.1205 active=0.955
+PPO seed=22 episode=64/800 reward=0.1117 active=0.949
+PPO seed=22 episode=96/800 reward=-0.1087 active=0.947
+PPO seed=22 episode=128/800 reward=-0.0744 active=0.946
+PPO seed=22 episode=160/800 reward=0.1297 active=0.945
+PPO seed=22 episode=192/800 reward=0.0713 active=0.947
+PPO seed=22 episode=224/800 reward=0.0532 active=0.948
+PPO seed=22 episode=256/800 reward=0.1141 active=0.950
+PPO seed=22 episode=288/800 reward=0.1236 active=0.951
+PPO seed=22 episode=320/800 reward=0.1378 active=0.952
+PPO seed=22 episode=352/800 reward=0.1082 active=0.956
+PPO seed=22 episode=384/800 reward=0.1420 active=0.954
+PPO seed=22 episode=416/800 reward=0.1252 active=0.952
+PPO seed=22 episode=448/800 reward=0.1310 active=0.953
+PPO seed=22 episode=480/800 reward=0.1361 active=0.949
+PPO seed=22 episode=512/800 reward=0.1175 active=0.946
+PPO seed=22 episode=544/800 reward=0.0836 active=0.945
+PPO seed=22 episode=576/800 reward=0.1373 active=0.947
+PPO seed=22 episode=608/800 reward=-0.0788 active=0.951
+PPO seed=22 episode=640/800 reward=0.1699 active=0.951
+PPO seed=22 episode=672/800 reward=-0.0117 active=0.949
+PPO seed=22 episode=704/800 reward=0.0226 active=0.949
+PPO seed=22 episode=736/800 reward=0.1290 active=0.950
+PPO seed=22 episode=768/800 reward=0.1540 active=0.948
+PPO seed=22 episode=800/800 reward=0.1429 active=0.950
+{"seed": 22, "episodes": 800, "env_steps": 128000, "wall_seconds": 575.608, "parameter_change_l2": 2.119378089904785, "actor_parameter_change_l2": 1.2100507020950317, "critic_parameter_change_l2": 1.739983081817627, "first_value_loss": 0.0021729502914240584, "last_value_loss": 0.0002116870246027247, "first_value_loss_raw": 21.72950291633606, "last_value_loss_raw": 2.116870254278183, "last_explained_variance": 0.9102831525649919, "last_value_prediction_mean": 7.424688339233398, "last_return_mean": 7.100399494171143, "first_32_mean_reward": 0.05570154943668576, "last_32_mean_reward": 0.1105485426922631, "checkpoint": "ppo_seed_22.pt", "ppo_settings": {"hidden_size": 64, "learning_rate": 0.0003, "critic_learning_rate": 0.001, "gamma": 0.99, "gae_lambda": 0.95, "clip_ratio": 0.2, "value_coefficient": 0.5, "entropy_coefficient": 0.005, "max_grad_norm": 0.5, "target_kl": 0.08, "rollout_steps": 1024, "minibatch_size": 256, "update_epochs": 4, "initial_log_std": -0.8, "initial_active_logit": 3.0, "initial_power_normalized": 0.95, "initial_tilt_normalized": -0.4, "value_scale": 100.0, "critic_time_features": true, "critic_target": "discounted_mc"}, "source_sha256": {"config.py": "f0b2dfc1564c3c328588600519f5dc408482783ab6670a4f69fff188a1deba47", "tn_ntn_model.py": "d6cc22f0a3d099eef7977f279415acd19e39fce772b3df323ff1d2f1cfefcf1c", "ppo.py": "b5016b1a5b8ce413c2cb5f6b8b1caa5d90b89b06a07b31913d55c0038dc41adc"}, "training_task_counts": [{"density": 6e-08, "t1_fraction": 1.0, "episodes": 165}, {"density": 1e-07, "t1_fraction": 1.0, "episodes": 163}, {"density": 3e-07, "t1_fraction": 1.0, "episodes": 172}, {"density": 1e-07, "t1_fraction": 0.5, "episodes": 144}, {"density": 1e-07, "t1_fraction": 0.0, "episodes": 156}]}

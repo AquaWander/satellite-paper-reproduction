@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer",
+  "commit": "356c09f4caabfed772c66e2498a1aa8c2223a8c1",
+  "commit_datetime": "2024-03-08T23:15:52-05:00",
+  "files": [
+    {
+      "path": "Simulator.py",
+      "bytes": 73815,
+      "sha256": "57215df16557e3b679b15da726a86b216f1c25347b9aa0d526d192f5b1de16bf",
+      "url": "https://raw.githubusercontent.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer/356c09f4caabfed772c66e2498a1aa8c2223a8c1/Simulator.py"
+    },
+    {
+      "path": "DSA/LICENSE",
+      "bytes": 1114,
+      "sha256": "20789cc746a442de668cb557a426d4d6d926b84fc0264560be78cfc6b9f40cfc",
+      "url": "https://raw.githubusercontent.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer/356c09f4caabfed772c66e2498a1aa8c2223a8c1/DSA/LICENSE"
+    },
+    {
+      "path": "DSA/controllers/ASCENTController.py",
+      "bytes": 10726,
+      "sha256": "de99bb80d06f1a67dc059d1aa85dfe52e13e3bb7e5dd152804fe4cb96f2f92a1",
+      "url": "https://raw.githubusercontent.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer/356c09f4caabfed772c66e2498a1aa8c2223a8c1/DSA/controllers/ASCENTController.py"
+    },
+    {
+      "path": "DSA/db/sim_settings.json",
+      "bytes": 19694,
+      "sha256": "fead917341ab6cee51cbef5ecec8990bf7d7e1749615e9a00b277f62b14da9f1",
+      "url": "https://raw.githubusercontent.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer/356c09f4caabfed772c66e2498a1aa8c2223a8c1/DSA/db/sim_settings.json"
+    },
+    {
+      "path": "DSA/response.json",
+      "bytes": 19748,
+      "sha256": "1d5373f56358689704ef657047a8a6733692c46b4d6cb6ffd881eecafe983f26",
+      "url": "https://raw.githubusercontent.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer/356c09f4caabfed772c66e2498a1aa8c2223a8c1/DSA/response.json"
+    },
+    {
+      "path": "data/export (1).geojson",
+      "bytes": 10459698,
+      "sha256": "7d6425bbbb2534eb7996afc95ab3d9f16c8c2f53ed257c6ca4b740bd7d203658",
+      "url": "https://raw.githubusercontent.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer/356c09f4caabfed772c66e2498a1aa8c2223a8c1/data/export%20%281%29.geojson"
+    },
+    {
+      "path": "t0p0.pkl",
+      "bytes": 1386804,
+      "sha256": "8f2da80b46d53989254e082a0afc8d9de1dadd31c3a806f00ce843a4dfff8a4f",
+      "url": "https://raw.githubusercontent.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer/356c09f4caabfed772c66e2498a1aa8c2223a8c1/t0p0.pkl"
+    },
+    {
+      "path": "DSA/settings/settings.py",
+      "bytes": 1475,
+      "sha256": "9197f71a99059e248d4ccf676d6712ec97f64a364a393e6b12fd516f3abad5bc",
+      "url": "https://raw.githubusercontent.com/NextG-Wireless-Lab-Mason/Context-aware-Spectrum-Coexistence-Analyzer/356c09f4caabfed772c66e2498a1aa8c2223a8c1/DSA/settings/settings.py"
+    }
+  ],
+  "runtime": "Geometry3D 0.2.4 / shapely 2.1.2 / pandas 3.0.1; current project numpy/scipy/matplotlib",
+  "license_boundary": "MIT found only in DSA/LICENSE; no root license covering Simulator.py was found"
+}

@@ -1,0 +1,73 @@
+{
+  "seed": 33,
+  "episodes": 800,
+  "env_steps": 128000,
+  "wall_seconds": 648.092,
+  "parameter_change_l2": 3.066556692123413,
+  "actor_parameter_change_l2": 0.9079999327659607,
+  "critic_parameter_change_l2": 2.9290454387664795,
+  "first_value_loss": 0.04828586522489786,
+  "last_value_loss": 0.0009749600030772854,
+  "first_value_loss_raw": 482.8586483001709,
+  "last_value_loss_raw": 9.74959996342659,
+  "last_explained_variance": 0.9785823318566776,
+  "last_value_prediction_mean": 37.75727081298828,
+  "last_return_mean": 38.21633529663086,
+  "first_32_mean_reward": 0.52501194696009,
+  "last_32_mean_reward": 0.6656041991936145,
+  "checkpoint": "ppo_seed_33.pt",
+  "ppo_settings": {
+    "hidden_size": 64,
+    "learning_rate": 0.0003,
+    "critic_learning_rate": 0.001,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_ratio": 0.2,
+    "value_coefficient": 0.5,
+    "entropy_coefficient": 0.005,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.08,
+    "rollout_steps": 1024,
+    "minibatch_size": 256,
+    "update_epochs": 4,
+    "initial_log_std": -0.8,
+    "initial_active_logit": 3.0,
+    "initial_power_normalized": 0.95,
+    "initial_tilt_normalized": -0.4,
+    "value_scale": 100.0,
+    "critic_time_features": true,
+    "critic_target": "discounted_mc"
+  },
+  "source_sha256": {
+    "config.py": "f0b2dfc1564c3c328588600519f5dc408482783ab6670a4f69fff188a1deba47",
+    "tn_ntn_model.py": "d6cc22f0a3d099eef7977f279415acd19e39fce772b3df323ff1d2f1cfefcf1c",
+    "ppo.py": "b5016b1a5b8ce413c2cb5f6b8b1caa5d90b89b06a07b31913d55c0038dc41adc"
+  },
+  "training_task_counts": [
+    {
+      "density": 6e-08,
+      "t1_fraction": 1.0,
+      "episodes": 175
+    },
+    {
+      "density": 1e-07,
+      "t1_fraction": 1.0,
+      "episodes": 161
+    },
+    {
+      "density": 3e-07,
+      "t1_fraction": 1.0,
+      "episodes": 141
+    },
+    {
+      "density": 1e-07,
+      "t1_fraction": 0.5,
+      "episodes": 171
+    },
+    {
+      "density": 1e-07,
+      "t1_fraction": 0.0,
+      "episodes": 152
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "full_request_three_snapshots": true,
+  "shape_three_by_33": true,
+  "finite_full_case_data": true,
+  "unchanged_original_simulator_three_calls": true,
+  "original_pathloss_99_calls": true,
+  "first_snapshot_matches_single_evidence": true,
+  "aggregate_linear_mean_correct": true,
+  "upstream_per_station_mean_correct": true,
+  "original_optimizer_cache_hash_matches": true,
+  "no_unplanned_optimization_miss": true,
+  "checked_controller_rejects_flat_99_values": true,
+  "explicit_grouped_adapter_accepts_33_values": true
+}

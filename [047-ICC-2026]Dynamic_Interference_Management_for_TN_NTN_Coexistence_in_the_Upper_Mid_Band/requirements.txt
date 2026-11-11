@@ -1,0 +1,11 @@
+numpy==2.4.3
+scipy==1.17.1
+matplotlib==3.10.8
+torch==2.10.0
+PyMuPDF==1.27.2
+Pillow==12.1.1
+
+# 官方 ASCENT 案例
+pandas==3.0.1
+Geometry3D==0.2.4
+shapely==2.1.2

@@ -1,0 +1,1009 @@
+{
+  "metadata": {
+    "evaluation_seeds": [
+      91001,
+      91002,
+      91003
+    ],
+    "methods": [
+      "No-coordination",
+      "ASCENT-derived",
+      "PPO"
+    ],
+    "uncertainty": "sample SD across independent pass/policy seed pairs; not per-user confidence intervals",
+    "baseline": "per-MBS threshold gate derived from checked official ASCENT; aggregate protection not guaranteed",
+    "geometry": "synthetic BS positions unless a coordinate CSV is configured",
+    "threshold_db": -6.0,
+    "ppo_inference": "sampled with fixed independent action seed",
+    "action_seeds": [
+      791001,
+      791002,
+      791003
+    ],
+    "profile": "ascent-envelope",
+    "simulation_config": {
+      "seed": 20260823,
+      "area_side_m": 20000.0,
+      "n_gnb": 106,
+      "frequency_hz": 12000000000.0,
+      "bandwidth_hz": 200000000.0,
+      "satellite_power_dbm": 48.0,
+      "satellite_gain_dbi": 38.3,
+      "t1_gain_dbi": 33.0,
+      "t2_gain_dbi": 17.0,
+      "gnb_max_power_dbm": 33.0,
+      "ue_max_power_dbm": 23.0,
+      "density_values": [
+        6e-08,
+        1e-07,
+        3e-07
+      ],
+      "mix_values": [
+        1.0,
+        0.5,
+        0.0
+      ],
+      "tn_ue_density_m2": 1.3e-05,
+      "ue_per_cell_min": 12,
+      "ue_per_cell_max": 20,
+      "satellite_altitude_m": 600000.0,
+      "earth_radius_m": 6371000.0,
+      "n_snapshots": 160,
+      "elevation_start_deg": 10.0,
+      "elevation_step_deg": 1.0,
+      "bs_coordinates_csv": "",
+      "gnb_height_m": 25.0,
+      "terminal_height_m": 1.5,
+      "gnb_peak_gain_dbi": 15.0,
+      "gnb_antenna_model": "ascent_array",
+      "gnb_horizontal_hpbw_deg": 65.0,
+      "gnb_vertical_hpbw_deg": 10.0,
+      "gnb_front_back_db": 30.0,
+      "gnb_sidelobe_db": 30.0,
+      "aperture_efficiency": 0.65,
+      "ut_antenna_model": "wbes_envelope",
+      "antenna_back_attenuation_db": 55.0,
+      "antenna_rear_model": "relative_floor",
+      "propagation_model": "icc_los",
+      "shadow_fading": false,
+      "noise_temperature_k": 200.0,
+      "noise_figure_db": 0.0,
+      "thermal_noise_dbm_hz": -174.0,
+      "ntn_extra_loss_db": 3.0,
+      "gnb_min_power_dbm": 10.0,
+      "ue_min_power_dbm": -10.0,
+      "tilt_min_deg": 0.0,
+      "tilt_max_deg": 20.0,
+      "default_tilt_deg": 6.0,
+      "inr_threshold_db": -6.0,
+      "downlink_duty": 0.75,
+      "uplink_duty": 0.25,
+      "reward_throughput_weight": 1.0,
+      "reward_active_weight": 0.5,
+      "reward_violation_weight": 1.0,
+      "ascent_radius_step_m": 500.0,
+      "ascent_hysteresis_db": 3.0,
+      "methods": [
+        "No-coordination",
+        "ASCENT-derived",
+        "PPO"
+      ]
+    }
+  },
+  "density": {
+    "density_6e-08": {
+      "No-coordination": {
+        "sample_count": 11520,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.45931100356661514,
+          1.5724333789451364,
+          5.448019560156808,
+          10.402015940251344,
+          16.324881688726457,
+          23.00185112089339,
+          29.15839411279759
+        ],
+        "median_inr_db": 10.402015940251344,
+        "active_ratio": 1.0,
+        "active_ratio_sd": 0.0,
+        "active_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "violation_ratio": 0.9998263888888889,
+        "violation_ratio_sd": 0.00030070326520297713,
+        "violation_ratio_per_seed": [
+          1.0,
+          1.0,
+          0.9994791666666666
+        ],
+        "throughput_bps": 36351568833.67848,
+        "throughput_bps_sd": 2670866812.9256835,
+        "throughput_bps_per_seed": [
+          38652246805.98689,
+          36979906373.25597,
+          33422553321.79259
+        ],
+        "seed_median_inr_db": 10.547444020340652,
+        "seed_median_inr_db_sd": 1.4163106633678548,
+        "seed_median_inr_db_per_seed": [
+          9.196215131582726,
+          10.42520430335364,
+          12.020912626085593
+        ]
+      },
+      "ASCENT-derived": {
+        "sample_count": 11520,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -13.821934218527204,
+          -10.962060602550975,
+          -7.898287929403564,
+          -5.485935725224488,
+          -3.7468322001902634,
+          -2.4566966895502094,
+          -1.8096045742168998
+        ],
+        "median_inr_db": -5.485935725224488,
+        "active_ratio": 0.48231132075471694,
+        "active_ratio_sd": 0.03844624475787664,
+        "active_ratio_per_seed": [
+          0.510436320754717,
+          0.438502358490566,
+          0.49799528301886786
+        ],
+        "violation_ratio": 0.572482638888889,
+        "violation_ratio_sd": 0.03715693528788975,
+        "violation_ratio_per_seed": [
+          0.6145833333333334,
+          0.55859375,
+          0.5442708333333334
+        ],
+        "throughput_bps": 54266547113.046326,
+        "throughput_bps_sd": 212403829.19204137,
+        "throughput_bps_per_seed": [
+          54485543290.63428,
+          54252683182.93449,
+          54061414865.570206
+        ],
+        "seed_median_inr_db": -5.5226555462853675,
+        "seed_median_inr_db_sd": 0.14415048984680273,
+        "seed_median_inr_db_per_seed": [
+          -5.3763572594182225,
+          -5.5270517103807535,
+          -5.664557669057126
+        ]
+      },
+      "PPO": {
+        "sample_count": 11520,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.8585740126608552,
+          1.0604772611409174,
+          4.319998438054487,
+          8.920720138273651,
+          15.028511358879713,
+          21.531820721372288,
+          26.36492095806034
+        ],
+        "median_inr_db": 8.920720138273651,
+        "active_ratio": 0.947936320754717,
+        "active_ratio_sd": 0.004952830188679242,
+        "active_ratio_per_seed": [
+          0.9422759433962264,
+          0.950058962264151,
+          0.9514740566037736
+        ],
+        "violation_ratio": 0.9961805555555556,
+        "violation_ratio_sd": 0.0033179713287528126,
+        "violation_ratio_per_seed": [
+          0.99453125,
+          1.0,
+          0.9940104166666668
+        ],
+        "throughput_bps": 38227910866.8832,
+        "throughput_bps_sd": 2127340735.9826016,
+        "throughput_bps_per_seed": [
+          40136550219.44242,
+          38612770220.22127,
+          35934412160.985916
+        ],
+        "seed_median_inr_db": 8.91859426430578,
+        "seed_median_inr_db_sd": 1.0551187421997805,
+        "seed_median_inr_db_per_seed": [
+          7.819663715014627,
+          9.01249472905354,
+          9.92362434884917
+        ]
+      }
+    },
+    "density_1e-07": {
+      "No-coordination": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.5111098085626133,
+          2.195989278013799,
+          5.525020661955618,
+          10.191047331316941,
+          15.621854757659827,
+          27.698120314982752,
+          32.3972706110048
+        ],
+        "median_inr_db": 10.191047331316941,
+        "active_ratio": 1.0,
+        "active_ratio_sd": 0.0,
+        "active_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "violation_ratio": 1.0,
+        "violation_ratio_sd": 0.0,
+        "violation_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "throughput_bps": 59843575322.546326,
+        "throughput_bps_sd": 6717686566.075999,
+        "throughput_bps_per_seed": [
+          54935448812.62043,
+          67499564511.42644,
+          57095712643.59212
+        ],
+        "seed_median_inr_db": 10.185307840471449,
+        "seed_median_inr_db_sd": 1.4329253231143966,
+        "seed_median_inr_db_per_seed": [
+          10.41534648123687,
+          8.65127948226037,
+          11.489297557917109
+        ]
+      },
+      "ASCENT-derived": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -18.7784419605814,
+          -16.81526969066535,
+          -13.96389031716438,
+          -10.482512545484337,
+          -7.085785775626857,
+          -5.102847286023685,
+          -4.106998995004417
+        ],
+        "median_inr_db": -10.482512545484337,
+        "active_ratio": 0.24502751572327042,
+        "active_ratio_sd": 0.027490603706921364,
+        "active_ratio_per_seed": [
+          0.2766509433962264,
+          0.22682783018867925,
+          0.23160377358490564
+        ],
+        "violation_ratio": 0.17098958333333333,
+        "violation_ratio_sd": 0.00936110080777542,
+        "violation_ratio_per_seed": [
+          0.16328125,
+          0.16828125,
+          0.18140625000000002
+        ],
+        "throughput_bps": 91957189151.93587,
+        "throughput_bps_sd": 526802411.50884223,
+        "throughput_bps_per_seed": [
+          92557780345.66399,
+          91740490470.58742,
+          91573296639.55624
+        ],
+        "seed_median_inr_db": -10.495051428302645,
+        "seed_median_inr_db_sd": 0.8133859602805582,
+        "seed_median_inr_db_per_seed": [
+          -11.39244161004275,
+          -9.806325367204018,
+          -10.286387307661165
+        ]
+      },
+      "PPO": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -1.0125067804273542,
+          0.8192076090227479,
+          4.443261666497558,
+          9.148753309405409,
+          15.31672954839856,
+          22.252899270298975,
+          27.713465229752753
+        ],
+        "median_inr_db": 9.148753309405409,
+        "active_ratio": 0.9471501572327045,
+        "active_ratio_sd": 0.005316530721924736,
+        "active_ratio_per_seed": [
+          0.9410966981132077,
+          0.9492924528301886,
+          0.9510613207547169
+        ],
+        "violation_ratio": 0.9986979166666666,
+        "violation_ratio_sd": 0.0008605578980134469,
+        "violation_ratio_per_seed": [
+          0.9981249999999999,
+          0.99828125,
+          0.9996875
+        ],
+        "throughput_bps": 63151738975.190155,
+        "throughput_bps_sd": 4244789541.957863,
+        "throughput_bps_per_seed": [
+          61209339858.262085,
+          68020187885.23956,
+          60225689182.06881
+        ],
+        "seed_median_inr_db": 9.196724505663648,
+        "seed_median_inr_db_sd": 1.3690560167861343,
+        "seed_median_inr_db_per_seed": [
+          9.245622938654535,
+          7.80387436672749,
+          10.540676211608915
+        ]
+      }
+    },
+    "density_3e-07": {
+      "No-coordination": {
+        "sample_count": 57600,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.18853505910590096,
+          2.1068998653254867,
+          5.908556730975613,
+          11.295041249129882,
+          17.413854382073644,
+          23.65273076827648,
+          26.989443797886548
+        ],
+        "median_inr_db": 11.295041249129882,
+        "active_ratio": 1.0,
+        "active_ratio_sd": 0.0,
+        "active_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "violation_ratio": 0.9973437500000002,
+        "violation_ratio_sd": 0.002254071355039965,
+        "violation_ratio_per_seed": [
+          0.9947916666666666,
+          0.9990625000000002,
+          0.9981770833333335
+        ],
+        "throughput_bps": 178196468107.7104,
+        "throughput_bps_sd": 7094997206.192568,
+        "throughput_bps_per_seed": [
+          186386877157.11197,
+          173937296944.6621,
+          174265230221.35712
+        ],
+        "seed_median_inr_db": 11.36323429222098,
+        "seed_median_inr_db_sd": 1.0628593118084984,
+        "seed_median_inr_db_per_seed": [
+          10.283065928545737,
+          12.40789467869413,
+          11.398742269423071
+        ]
+      },
+      "ASCENT-derived": {
+        "sample_count": 57600,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -44.75022049904173,
+          -41.757727911648054,
+          -36.15098051956839,
+          -30.59857349019948,
+          -22.56340156984951,
+          -13.32560787246032,
+          -9.519213106874272
+        ],
+        "median_inr_db": -30.59857349019948,
+        "active_ratio": 0.04060534591194968,
+        "active_ratio_sd": 0.015767785354543186,
+        "active_ratio_per_seed": [
+          0.05583726415094339,
+          0.041627358490566035,
+          0.024351415094339624
+        ],
+        "violation_ratio": 0.004409722222222222,
+        "violation_ratio_sd": 0.005693623966975235,
+        "violation_ratio_per_seed": [
+          0.0109375,
+          0.00046875,
+          0.0018229166666666667
+        ],
+        "throughput_bps": 278953570008.7369,
+        "throughput_bps_sd": 284152185.9073706,
+        "throughput_bps_per_seed": [
+          278971523850.1535,
+          278660866618.62585,
+          279228319557.4313
+        ],
+        "seed_median_inr_db": -30.1715168741522,
+        "seed_median_inr_db_sd": 3.467260517975225,
+        "seed_median_inr_db_per_seed": [
+          -26.29422957085919,
+          -31.24593956140248,
+          -32.97438149019493
+        ]
+      },
+      "PPO": {
+        "sample_count": 57600,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -1.6698472498766532,
+          0.38162404988374493,
+          4.087858309583602,
+          9.018494450525012,
+          15.001189231093036,
+          21.43471274521006,
+          25.87745009007544
+        ],
+        "median_inr_db": 9.018494450525012,
+        "active_ratio": 0.945872641509434,
+        "active_ratio_sd": 0.005084790250554346,
+        "active_ratio_per_seed": [
+          0.9401533018867925,
+          0.9475825471698112,
+          0.9498820754716982
+        ],
+        "violation_ratio": 0.9936458333333332,
+        "violation_ratio_sd": 0.004245031307141563,
+        "violation_ratio_per_seed": [
+          0.9888020833333332,
+          0.9954166666666666,
+          0.9967187500000001
+        ],
+        "throughput_bps": 191548176464.21915,
+        "throughput_bps_sd": 6303034782.942785,
+        "throughput_bps_per_seed": [
+          198375479590.97015,
+          190318373908.11926,
+          185950675893.56805
+        ],
+        "seed_median_inr_db": 9.032070498666686,
+        "seed_median_inr_db_sd": 0.8055694633505964,
+        "seed_median_inr_db_per_seed": [
+          8.158031427794043,
+          9.193438193506879,
+          9.744741874699136
+        ]
+      }
+    }
+  },
+  "mix": {
+    "T1_100_T2_0": {
+      "No-coordination": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.5111098085626133,
+          2.195989278013799,
+          5.525020661955618,
+          10.191047331316941,
+          15.621854757659827,
+          27.698120314982752,
+          32.3972706110048
+        ],
+        "median_inr_db": 10.191047331316941,
+        "active_ratio": 1.0,
+        "active_ratio_sd": 0.0,
+        "active_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "violation_ratio": 1.0,
+        "violation_ratio_sd": 0.0,
+        "violation_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "throughput_bps": 59843575322.546326,
+        "throughput_bps_sd": 6717686566.075999,
+        "throughput_bps_per_seed": [
+          54935448812.62043,
+          67499564511.42644,
+          57095712643.59212
+        ],
+        "seed_median_inr_db": 10.185307840471449,
+        "seed_median_inr_db_sd": 1.4329253231143966,
+        "seed_median_inr_db_per_seed": [
+          10.41534648123687,
+          8.65127948226037,
+          11.489297557917109
+        ]
+      },
+      "ASCENT-derived": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -18.7784419605814,
+          -16.81526969066535,
+          -13.96389031716438,
+          -10.482512545484337,
+          -7.085785775626857,
+          -5.102847286023685,
+          -4.106998995004417
+        ],
+        "median_inr_db": -10.482512545484337,
+        "active_ratio": 0.24502751572327042,
+        "active_ratio_sd": 0.027490603706921364,
+        "active_ratio_per_seed": [
+          0.2766509433962264,
+          0.22682783018867925,
+          0.23160377358490564
+        ],
+        "violation_ratio": 0.17098958333333333,
+        "violation_ratio_sd": 0.00936110080777542,
+        "violation_ratio_per_seed": [
+          0.16328125,
+          0.16828125,
+          0.18140625000000002
+        ],
+        "throughput_bps": 91957189151.93587,
+        "throughput_bps_sd": 526802411.50884223,
+        "throughput_bps_per_seed": [
+          92557780345.66399,
+          91740490470.58742,
+          91573296639.55624
+        ],
+        "seed_median_inr_db": -10.495051428302645,
+        "seed_median_inr_db_sd": 0.8133859602805582,
+        "seed_median_inr_db_per_seed": [
+          -11.39244161004275,
+          -9.806325367204018,
+          -10.286387307661165
+        ]
+      },
+      "PPO": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -1.0125067804273542,
+          0.8192076090227479,
+          4.443261666497558,
+          9.148753309405409,
+          15.31672954839856,
+          22.252899270298975,
+          27.713465229752753
+        ],
+        "median_inr_db": 9.148753309405409,
+        "active_ratio": 0.9471501572327045,
+        "active_ratio_sd": 0.005316530721924736,
+        "active_ratio_per_seed": [
+          0.9410966981132077,
+          0.9492924528301886,
+          0.9510613207547169
+        ],
+        "violation_ratio": 0.9986979166666666,
+        "violation_ratio_sd": 0.0008605578980134469,
+        "violation_ratio_per_seed": [
+          0.9981249999999999,
+          0.99828125,
+          0.9996875
+        ],
+        "throughput_bps": 63151738975.190155,
+        "throughput_bps_sd": 4244789541.957863,
+        "throughput_bps_per_seed": [
+          61209339858.262085,
+          68020187885.23956,
+          60225689182.06881
+        ],
+        "seed_median_inr_db": 9.196724505663648,
+        "seed_median_inr_db_sd": 1.3690560167861343,
+        "seed_median_inr_db_per_seed": [
+          9.245622938654535,
+          7.80387436672749,
+          10.540676211608915
+        ]
+      }
+    },
+    "T1_50_T2_50": {
+      "No-coordination": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.5111098085626133,
+          2.195989278013799,
+          5.525020661955618,
+          10.191047331316941,
+          15.621854757659827,
+          27.698120314982752,
+          32.3972706110048
+        ],
+        "median_inr_db": 10.191047331316941,
+        "active_ratio": 1.0,
+        "active_ratio_sd": 0.0,
+        "active_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "violation_ratio": 1.0,
+        "violation_ratio_sd": 0.0,
+        "violation_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "throughput_bps": 40535919963.65876,
+        "throughput_bps_sd": 6352158574.952667,
+        "throughput_bps_per_seed": [
+          36700994478.72294,
+          47868170647.96586,
+          37038594764.2875
+        ],
+        "seed_median_inr_db": 10.185307840471449,
+        "seed_median_inr_db_sd": 1.4329253231143966,
+        "seed_median_inr_db_per_seed": [
+          10.41534648123687,
+          8.65127948226037,
+          11.489297557917109
+        ]
+      },
+      "ASCENT-derived": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -18.7784419605814,
+          -16.81526969066535,
+          -13.96389031716438,
+          -10.482512545484337,
+          -7.085785775626857,
+          -5.102847286023685,
+          -4.106998995004417
+        ],
+        "median_inr_db": -10.482512545484337,
+        "active_ratio": 0.24502751572327042,
+        "active_ratio_sd": 0.027490603706921364,
+        "active_ratio_per_seed": [
+          0.2766509433962264,
+          0.22682783018867925,
+          0.23160377358490564
+        ],
+        "violation_ratio": 0.17098958333333333,
+        "violation_ratio_sd": 0.00936110080777542,
+        "violation_ratio_per_seed": [
+          0.16328125,
+          0.16828125,
+          0.18140625000000002
+        ],
+        "throughput_bps": 70786242256.2345,
+        "throughput_bps_sd": 525475594.3461913,
+        "throughput_bps_per_seed": [
+          71385939162.71574,
+          70566377023.241,
+          70406410582.74675
+        ],
+        "seed_median_inr_db": -10.495051428302645,
+        "seed_median_inr_db_sd": 0.8133859602805582,
+        "seed_median_inr_db_per_seed": [
+          -11.39244161004275,
+          -9.806325367204018,
+          -10.286387307661165
+        ]
+      },
+      "PPO": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.9997798180198966,
+          0.8404865470425543,
+          4.458606059552322,
+          9.194791426690314,
+          15.370670489970502,
+          22.2479099609889,
+          27.71293589592131
+        ],
+        "median_inr_db": 9.194791426690314,
+        "active_ratio": 0.9471698113207546,
+        "active_ratio_sd": 0.005671728496541716,
+        "active_ratio_per_seed": [
+          0.9407429245283019,
+          0.9492924528301886,
+          0.9514740566037736
+        ],
+        "violation_ratio": 0.9986458333333333,
+        "violation_ratio_sd": 0.0009155414495440559,
+        "violation_ratio_per_seed": [
+          0.9979687500000001,
+          0.99828125,
+          0.9996875
+        ],
+        "throughput_bps": 43496330227.77161,
+        "throughput_bps_sd": 4330656527.875744,
+        "throughput_bps_per_seed": [
+          42107886977.05773,
+          48350931038.62271,
+          40030172667.63438
+        ],
+        "seed_median_inr_db": 9.231601911722814,
+        "seed_median_inr_db_sd": 1.405781052686929,
+        "seed_median_inr_db_per_seed": [
+          9.222797625537368,
+          7.83024367996421,
+          10.641764429666864
+        ]
+      }
+    },
+    "T1_0_T2_100": {
+      "No-coordination": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.5111098085626133,
+          2.195989278013799,
+          5.525020661955618,
+          10.191047331316941,
+          15.621854757659827,
+          27.698120314982752,
+          32.3972706110048
+        ],
+        "median_inr_db": 10.191047331316941,
+        "active_ratio": 1.0,
+        "active_ratio_sd": 0.0,
+        "active_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "violation_ratio": 1.0,
+        "violation_ratio_sd": 0.0,
+        "violation_ratio_per_seed": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "throughput_bps": 23233378989.6326,
+        "throughput_bps_sd": 3527625446.6245337,
+        "throughput_bps_per_seed": [
+          21410712683.647957,
+          27299479478.64895,
+          20989944806.600883
+        ],
+        "seed_median_inr_db": 10.185307840471449,
+        "seed_median_inr_db_sd": 1.4329253231143966,
+        "seed_median_inr_db_per_seed": [
+          10.41534648123687,
+          8.65127948226037,
+          11.489297557917109
+        ]
+      },
+      "ASCENT-derived": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -18.7784419605814,
+          -16.81526969066535,
+          -13.96389031716438,
+          -10.482512545484337,
+          -7.085785775626857,
+          -5.102847286023685,
+          -4.106998995004417
+        ],
+        "median_inr_db": -10.482512545484337,
+        "active_ratio": 0.24502751572327042,
+        "active_ratio_sd": 0.027490603706921364,
+        "active_ratio_per_seed": [
+          0.2766509433962264,
+          0.22682783018867925,
+          0.23160377358490564
+        ],
+        "violation_ratio": 0.17098958333333333,
+        "violation_ratio_sd": 0.00936110080777542,
+        "violation_ratio_per_seed": [
+          0.16328125,
+          0.16828125,
+          0.18140625000000002
+        ],
+        "throughput_bps": 49619042717.445045,
+        "throughput_bps_sd": 521020625.9602856,
+        "throughput_bps_per_seed": [
+          50213166505.38985,
+          49403988055.62108,
+          49239973591.324234
+        ],
+        "seed_median_inr_db": -10.495051428302645,
+        "seed_median_inr_db_sd": 0.8133859602805582,
+        "seed_median_inr_db_per_seed": [
+          -11.39244161004275,
+          -9.806325367204018,
+          -10.286387307661165
+        ]
+      },
+      "PPO": {
+        "sample_count": 19200,
+        "percentiles": [
+          5,
+          10,
+          25,
+          50,
+          75,
+          90,
+          95
+        ],
+        "percentiles_db": [
+          -0.9834434163701148,
+          0.8534117097808207,
+          4.480473299767012,
+          9.249239494042282,
+          15.419636784436214,
+          22.29325708531718,
+          27.799201265926346
+        ],
+        "median_inr_db": 9.249239494042282,
+        "active_ratio": 0.9471698113207547,
+        "active_ratio_sd": 0.006163460593247565,
+        "active_ratio_per_seed": [
+          0.9402122641509433,
+          0.9493514150943396,
+          0.9519457547169813
+        ],
+        "violation_ratio": 0.9986979166666666,
+        "violation_ratio_sd": 0.0008884751098557792,
+        "violation_ratio_per_seed": [
+          0.9979687500000001,
+          0.9984375,
+          0.9996875
+        ],
+        "throughput_bps": 25031697300.29942,
+        "throughput_bps_sd": 2693153372.135823,
+        "throughput_bps_per_seed": [
+          24790051091.492195,
+          27837530724.641,
+          22467510084.765068
+        ],
+        "seed_median_inr_db": 9.282686347099862,
+        "seed_median_inr_db_sd": 1.4336738028340377,
+        "seed_median_inr_db_per_seed": [
+          9.177515413190582,
+          7.904494095843844,
+          10.76604953226516
+        ]
+      }
+    }
+  }
+}

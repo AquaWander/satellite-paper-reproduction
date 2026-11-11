@@ -1,0 +1,8 @@
+{
+  "core_sha256": {
+    "config.py": "f0b2dfc1564c3c328588600519f5dc408482783ab6670a4f69fff188a1deba47",
+    "tn_ntn_model.py": "d6cc22f0a3d099eef7977f279415acd19e39fce772b3df323ff1d2f1cfefcf1c"
+  },
+  "diagnostics_sha256": "b46dfa7eac4be2bb466600024eac7dbef2693d1159e88d3baad0ac83c67888f5",
+  "note": "只做冻结模型诊断；不代表已采纳任何诊断干预。"
+}

@@ -1,0 +1,54 @@
+{
+  "commit": "356c09f4caabfed772c66e2498a1aa8c2223a8c1",
+  "scope": "controller-only correction; same unchanged physical simulator output",
+  "corrections": [
+    "remove hardcoded 33-value feedback overwrite; pass actual simulated per-MBS INR"
+  ],
+  "controller": {
+    "message": {
+      "status": "success",
+      "message": "0 base stations stopped from transmitting. Exclusion Zone Radius is 1099.54"
+    },
+    "active_mask": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "active_count": 31,
+    "exclusion_zone_radius_m": 1099.54,
+    "feedback_overwrite_removed": true,
+    "threshold_db": -8.5,
+    "measured_post_control_aggregate_inr_db": -7.713840131706888,
+    "gate": "per-MBS INR threshold, not aggregate INR threshold"
+  }
+}
